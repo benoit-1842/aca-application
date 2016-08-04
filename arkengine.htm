@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!--
+
+
+
+    email: benoit1975@hotmail.ca
+
+
+
+
+    -->
+
+    <title>Oakstead Arts</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <style>
+        * {
+            font-family: OakFont, Monospace;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        @font-face {
+            font-family: 'OakFont';
+            src: url(oakworks.otf) format("opentype");
+        }
+
+        body {
+            background-color: #f0f0f0;
+            margin: 0px;
+            padding: 0px;
+            overflow: hidden;
+            font-size: 14px;
+        }
+
+        #drawCanvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -99;
+        }
+
+        #page {
+            width: 100%;
+            height: 100%;
+            overflow-y: scroll;
+            border-top: 0;
+            position: fixed;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <script src="tether.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css" integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/js/bootstrap.min.js" integrity="sha384-ux8v3A6CPtOTqOzMKiuo3d/DomGaaClxFYdCu2HPMBEkf6x2xiDyJ7gkXU0MWwaD" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="overlay">
+
+    <div id="page">
+
+        <nav class="navbar navbar-dark bg-inverse">
+            <div class="container">
+                <a class="navbar-brand" href="#">Benoit</a>
+                <ul class="nav navbar-nav">
+                    <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div><!-- /.container -->
+        </nav><!-- /.navbar -->
+
+        <div class="container">
+
+            <div class="row row-offcanvas row-offcanvas-right">
+
+                <div class="col-xs-12">
+                    <p class="pull-xs-right hidden-sm-up">
+                        <button type="button" class="btn btn-primary btn-sm" data-toggle="offcanvas">Toggle nav</button>
+                    </p>
+                    <div class="jumbotron">
+                        <h1>Hello, world!</h1>
+                        <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor
+                            sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet </p>
+                    </div>
+
+                </div><!--/span-->
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="engine.min.js"></script>
+</body>
+</html>
